@@ -414,7 +414,39 @@ class Chapter3:
             ("Check your phone",self.phone)
         ])
     
+    def phone(self):
+        scr("You check your phone and turns out you have school today, so you go home, ready and rush to school. But on the way to school, you find a man thirsty so you decide to help him.")
+        return wait_for_choice([
+            ("Give some water",self.give),
+            ("Walk Away",self.away)
+        ])
+    
+    def away(self):
+        scr("You walk away not really caring, .. / ... . . / -.-- --- ..- .-. / -... .-.. --- --- -.. -.-- / -... .- -.-. -.- .-.-.- he played on the wall")
+        return wait_for_choice([
+            ("Keep Walking",self.die)
+        ])
+    
+    def die(self):
+        scr("You keep walking but somehow get caught in a robbery and are stabbed in the back. You faint with your back aching and bleeding.")
+        return wait_for_choice([
+            ("Wake Up",self.ch4)
+        ])
+    
+    def give(self):
+        scr("You give him some water, he smiles back, telling you to wait a while before leaving to save yourself from danger. You take his word lightly and continue walking. You get caught in a chain snatching and are stabbed in the back. You close your eyes and")
+        return wait_for_choice([
+            ("Wake Up",self.ch4)
+        ])
+    
     def walk(self):
+        scr("You walk, more careful then ever, making sure to look everywhere to make sure whatever happened before to not happen.")
+        return wait_for_choice([
+            ("Go buy water",self.shop),
+            ("Keep walking",self.more_walk)
+        ])
+    
+    def shop(self):
         scr("")
 
 
