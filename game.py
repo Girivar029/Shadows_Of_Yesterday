@@ -447,7 +447,66 @@ class Chapter3:
         ])
     
     def shop(self):
-        scr("")
+        scr("You enter the shop and buy some water, the shopkeeper oddly asks you whether you want to buy some bandages, but you keep moving.")
+        return wait_for_choice([
+            ("Keep Walking",self.more_walk)
+        ])
+    
+    def more_walk(self):
+        scr("You keep walking but are caught in the crossfire of a chain snatching and end up getting stabbed in the back.")
+        return wait_for_choice([
+            ("Wake Up",self.ch4)
+            ])
+    
+    def ch4(self):
+        scr("You wake up in you room, again.")
+        return wait_for_choice([
+            ("Chapter 4",self.manager.chapter4.intro)
+        ])
+    
+class Chapter4:
+    def __init__(self,manager):
+        self.manager = manager
+
+    def intro(self):
+        scr("You wake up again and rush to the clock, only to find the day is still the 24th of July and it is 7:00 AM, this confuses and you have a very weird feeling about this but cannot express this to anyone or can you.")
+        return wait_for_choice([
+            ("Walk Out",self.out),
+            ("Think Through",self.think)
+        ])
+    
+    def think(self):
+        scr("You think about this a lot, trying to explain this situation which is happening to you and find no answer. You try pinching yourself again and it definitely hurts.")
+        return wait_for_choice([
+            ("Walk Out",self.out),
+            ("Think Harder",self.think_harder)
+        ])
+    
+    def think_harder(self):
+        scr("You see yourself sweating, wipe the sweat off your face and sit down in a chair to think this through better, you think of many reasons but it all seems fantastical, everything seems like something out of a movie. All of it from the way you always wake back up to the same day and time. But you also think that this could be a dream a very bad one in that, not knowing what to do, you decide to test one of the theories out.")
+        return wait_for_choice([
+            ("Dream Theory",self.dream),
+            ("Time Loop Theory",self.time_loop)
+        ])
+    
+    def time_loop(self):
+        scr("You think that there is only one way to test this theory out, but it may risk your life. Yet you stand in the top of your terrace looking down, scared by the height and step back in the last moment, not wanting to lose your life to test out some stupid theory.")
+        return wait_for_choice([
+            ("Walk Out",self.out)
+        ])
+    
+    def dream(self):
+        scr("Still not convinced by the pinch earlier decide to poke yourself with a needle, you touch your arm with it slightly, as it touches you feel the pain coursing along your arm, making it feel worse than it already was(but there is no bandaid in hand). You go to your box of bandaids and put one in your forearm.")
+        return wait_for_choice([
+            ("Walk Out",self.out)
+        ])
+    
+    def out(self):
+        scr("You walk out and greet Mr.Juger, he greet you back and enquires about the bandaid you are wearing. You tell him a half baked lie, he doesn't seem to notice and asks you to be more careful with your own body. You nod and ...")
+        return wait_for_choice([
+            ("Walk away",self.walk),
+            ("Ask Him",self.ask_juger)
+        ])
 
 
 
@@ -456,6 +515,7 @@ class SceneManager:
         self.chapter1 = ChapterStart(self)
         self.chapter2 = Chapter2(self)
         self.chapter3 = Chapter3(self)
+        self.chapter4 = Chapter4(self)
         self.current_scene = self.chapter1.ch1
 
     def run(self):
