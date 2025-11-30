@@ -502,12 +502,197 @@ class Chapter4:
         ])
     
     def out(self):
-        scr("You walk out and greet Mr.Juger, he greet you back and enquires about the bandaid you are wearing. You tell him a half baked lie, he doesn't seem to notice and asks you to be more careful with your own body. You nod and ...")
+        scr("You walk out and greet Mr.Juger, he greet you back and enquires about the bandaid you are wearing. You tell him a half baked lie, he doesn't seem to notice and asks you to be more careful with your own body and to remember to wear bandaids if you ever get hurt. You nod and ...")
         return wait_for_choice([
             ("Walk away",self.walk),
             ("Ask Him",self.ask_juger)
         ])
+    
+    def ask_juger(self):
+        scr("Before going you think about what to ask, are you gonna explain the situation to him or are you gonna ask him about this without revealing details.")
+        return wait_for_choice([
+            ("Tell Truth",self.truth),
+            ("Tell Lie",self.lie)
+        ])
+    
+    def lie(self):
+        scr("You ask Mr.Juger about hallucinations and time loops, he laughs it off saying that may be only possible in fantasy but not in real life. You nod, saying you understand and keep walking.")
+        return wait_for_choice([
+            ("Keep Walking",self.walk)
+        ])
+    
+    def truth(self):
+        scr("You confess to Mr.Juger about your situation, he asks you to calm down and focus on the present, and tells you to stay safe. 'Focus on the present', these words keep repeating in your mind, playing like a broken record.")
+        return wait_for_choice([
+            ("Walk Away",self.walk)
+        ])
+    
+    def walk(self):
+        scr("You walk away as safe as ever, slowly and cautiously through the road. You end up noticing the car pass by peacefully and chose to ignore the chain snatching taking place. You now ...")
+        return wait_for_choice([
+            ("Be more careful",self.careful),
+            ("Find Thirsty Man",self.man)
+        ])
+    
+    def man(self):
+        scr("You look around to find a man you have seen before asking for some water atleast remember seeing someone like this, so you approach the same shop and try finding this man. You find him, sitting in the exact spot, what next?")
+        return wait_for_choice([
+            ("Buy Him Water",self.buy_man_water),
+            ("Ask Questions",self.ask_man)
+        ])
+    
+    def ask_man(self):
+        scr("You want to ask the man few questions, but what will you ask and how will a homeless man in the middle of nowhere know the answers to your questions.")
+        return wait_for_choice([
+            ("Walk Away",self.walk_away)
+        ])
+    
+    def buy_man_water(self):
+        scr("You go to the shop, buy the man some water and give it to him. He takes it, thanks you and tells you to take care of your wounds. This seems very odd to you but you decide to move on anyway as, he may as well be a mad man.")
+        return wait_for_choice([
+            ("Walk Away",self.walk_away)
+        ])
+    
+    def walk_away(self):
+        scr("You walk in the direction of your school as you have to be there today, and decide to forget everything that has happened so far and move on to have a normal day at school.")
+        return wait_for_choice([
+            ("Enter School",self.school)
+        ])
+    
+    def school(self):
+        scr("You enter your school, walk to your class and occupy your bench, you have arrived very early today so you decide to wait for a while for others.")
+        return wait_for_choice([
+            ("Look Around",self.look_school),
+            ("Sit and Wait",self.wait)
+        ])
+    
+    def look_school(self):
+        scr("You look around in your classroom, find nothing new, just images of your class in trips and expeditions but can hardly recognise yourself in those images, you seem sad in them, dissacioated from everyone else in the group, almost as if you have no firends or as if everyone is delibrately avoiding you.")
+        return wait_for_choice([
+        ("Sit and Wait",self.wait)
+        ])
+    
+    def wait(self):
+        scr("You wait around for a while, a lot longer than you expect, but find nobody around, it is as if there was no school today in the first place, you walk around the school trying to find if anyone is there. All you find is empty rooms and a TV running in the staff room, talking about a virus spreading in the town and schools being cancelled due to that.")
+        return wait_for_choice([
+            ("Wake Up?",self.ch5)
+        ])
+    
+    def ch5(self):
+        scr("You wake up again, now with a plan to do something this time.")
+        return wait_for_choice([
+            ("Test Hypothesis",self.manager.chapter5_1.intro),
+            ("Ask Questions",self.manager.chapter5_2.intro)
+        ])
+    
+class Chapter5_1:
+    def __init__(self,manager):
+        self.manager = manager
 
+    def intro(self):
+        scr("Chapter 5: A instinctive decision")
+        return wait_for_choice([
+            ("Continue",self.do)
+        ])
+
+    def do(self):
+        scr("You wake up in this day, trying to comprehend the situation you are in. Fed up with the continous day loop that you are in, you decide to try out stuff to check the limilts of this.")
+        return wait_for_choice([
+            ("Try out pain",self.pain)
+        ])
+    
+    def pain(self):
+        scr("You test the limits of pain which you can mentally handle, from aggrevating pain to a lot more accidents, almost reliving every accident from the previous times")
+        return wait_for_choice([
+            ("Calm Down",self.calma)
+        ])
+    
+    def calma(self):
+        scr("You calm down, breathing slowly and reinterpreting all the knowledge you have gathered so far. You know that almost anything you do, lets you back to wake up in the same day. You tried everything that you can to hurt yourself but everything leads you back to this place in the same say and time. You suddenly feel pain.....")
+        return wait_for_choice([
+            ("Faint",self.faint)
+        ])
+    
+    def faint(self):
+        scr("You faint and wait for the moment to wake back up again, but that doesn't happen, you hear a man crying, someone having pain all over their body, you can sense it but cannot pin point how.")
+        return wait_for_choice([
+            ("Listen More",self.more_patience)
+        ])
+    
+    def more_patience(self):
+        scr("You patiently listen more, you hear the man describing all the pain in his body, which feels really uncomfortable. You cannot understand why but you can't escape this moment. After a long time of efforts you, finally wake up.")
+        return wait_for_choice([
+            ("Check Others",self.others)
+        ])
+    
+    def others(self):
+        scr("You decide to check few other theories you have out, you want to do a lot of things now. You have a lot of theories to test. You decide to...")
+        return wait_for_choice([
+            ("Check interactions",self.inter),
+            ("Play with risks",self.risks)
+        ])
+    
+    def inter(self):
+        scr("You want to talk to the people and find out what is causing all this, checking for clues, people who can help and anything, anything you want. You decide to ask")
+        return wait_for_choice([
+            ("Ask Mr.Juger",self.juger),
+            ("Ask the homeless man",self.homeless),
+            ("Check out the school",self.school)            
+        ])
+    
+    def school(self):
+        scr("You decide to wander back ti the school, as it was the last place you had been in the previous renditions of this day. You enter this building, still as empty as ever and decide to keep walking, right back into the place where he had seen the TV. The TV now off gives no new clues to us, almost as if it never did anything in the first place.")
+        return wait_for_choice([
+            ("Go Deeper",self.deep)
+        ])
+    
+    def deep(self):
+        scr("You search the school, more and more, finding nothing in the way. You still look, not knowing what to find, search through benches, locker rooms and others. finding few books with many names on it but all having empty pages, or nothing on them.")
+        return wait_for_choice([
+            ("Turn Back",self.back)
+        ])
+    
+    def back(self):
+        scr("You decide to go back as you did not find anything anyways, but when you decide to walk out, you find a boy, sitting alone in a classroom, you decide to...")
+        return wait_for_choice([
+            ("Talk",self.talk),
+            ("Walk Out",self.out)
+        ])
+    
+    def talk(self):
+        scr("You go to him and ask him, trying to find some answers but fid none, almost as if he is mute and deaf. You decide to ask him more questions, trying to get any information from the guy, but all he does is turn towards you and smile, not creepy, not sad just a normal smile and nothing else.")
+        return wait_for_choice([
+            ("Walk Out",self.out)
+        ])
+    
+    def out(self):
+        scr("You walk out and decide to...")
+        return wait_for_choice([
+            ("Ask Mr.Juger",self.juger)
+        ])
+    
+    def juger(self):
+        scr("You find Mr.Juger on the road again, in the same time and place as you usually do, you want to ask him a question but what do you ask...")
+        return wait_for_choice([
+            ("Ask About Loop",self.ask_loop),
+            ("Ask About Time",self.time)
+        ])
+    
+    def ask_loop(self):
+        scr("You ask him about a time loop, asking him if it is possible, and will it take place properly and is it even practically possible. He replies telling you that he had heard stories about time loops, of people living through the same day to fulfill a particular thing which finally frees them from the loop. He also mentioned that he doesn't believe in anything like a time loop and thinks it is all a fairy tale.")
+        return wait_for_choice([
+            ("Ask About Time",self.time),
+            ("Leave",self.out_juger)
+        ])
+    
+    def time(self):
+        scr("You ask him about the concept of time and how time can be looped, like can time have a start and an end or is it infinte, he answers back laughing it off, telling you it is not very common to be talking about time but time is not a big piece of discussion, and is a very philosophical thing which he cannot answer.")
+
+
+class Chapter5_2:
+    def __init__(self,manager):
+        self.manager = manager
+        
 
 
 class SceneManager:
@@ -516,6 +701,8 @@ class SceneManager:
         self.chapter2 = Chapter2(self)
         self.chapter3 = Chapter3(self)
         self.chapter4 = Chapter4(self)
+        self.chapter5_1 = Chapter5_1(self)
+        self.chapter5_2 = Chapter5_2(self)
         self.current_scene = self.chapter1.ch1
 
     def run(self):
