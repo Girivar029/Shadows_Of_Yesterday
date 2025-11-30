@@ -1125,7 +1125,8 @@ class Chapter6:
     def home_sleep(self):
         scr("You pull the blanket over yourself and let your eyes close, not because your body is shutting down, but because you choose to. There is no crash, no knife, no forced reset. Only the soft slide into sleep. Somewhere far away, a quiet beep keeps time. When you wake, you already know what the clock will say—and somehow, that hurts less than it did before.")
         return wait_for_choice([
-            ("Wake up", self.manager.chapter7.intro)
+            ("Wake up", self.manager.chapter7.intro),
+            ("")
         ])
     
         
