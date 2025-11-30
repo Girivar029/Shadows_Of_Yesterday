@@ -1125,9 +1125,295 @@ class Chapter6:
     def home_sleep(self):
         scr("You pull the blanket over yourself and let your eyes close, not because your body is shutting down, but because you choose to. There is no crash, no knife, no forced reset. Only the soft slide into sleep. Somewhere far away, a quiet beep keeps time. When you wake, you already know what the clock will say—and somehow, that hurts less than it did before.")
         return wait_for_choice([
-            ("Wake up", self.manager.chapter7.intro),
-            ("")
+            ("Wake up", self.manager.chapter7.intro)
         ])
+    
+
+class Chapter7:
+    def __init__(self, manager):
+        self.manager = manager
+
+    # ENTRY: BLACK VOID / NO WAKE ----------------------------
+
+    def intro(self):
+        scr("There is no ceiling, no bed, no clock. Only black. You become aware of yourself as a thin outline in the dark, like chalk drawn around a body. There is no floor, but you are standing. No walls, but nowhere to go. The silence feels like the world took a breath in and never let it out.")
+        return wait_for_choice([
+            ("Listen", self.first_voice)
+        ])
+
+    # CRYING / ANGRY MINDVOICE ----------------------------
+
+    def first_voice(self):
+        scr("Somewhere in the dark, you hear crying. It starts faint, then grows, then fades again, like waves that never reach a shore. You can’t tell if it’s a child or an adult. It could be you. It could be everyone you have been in every loop so far.")
+        return wait_for_choice([
+            ("Call out", self.call_out)
+        ])
+
+    def call_out(self):
+        scr("You ask who is there, your voice feeling delayed, as if it has to swim through heavy water before reaching the air. The crying shifts, mixing with something sharper—anger layered over exhaustion.")
+        return wait_for_choice([
+            ("Listen closer", self.voice_merge)
+        ])
+
+    def voice_merge(self):
+        scr("[VOICE - CRYING]: Please... it hurts... make it stop...\n[VOICE - ANGRY]: Why did you keep doing this?\nThe sound circles you without footsteps, moving everywhere and nowhere at once. You realise this voice has been with you in every accident, every loop, every reset.")
+        return wait_for_choice([
+            ("Stay still", self.stage_juger),
+            ("Ask what it is", self.ask_what)
+        ])
+
+    def ask_what(self):
+        scr("You ask the voice what it is. The reply comes back split, like a mirror cracked down the middle. One half shaking, one half furious.")
+        scr("[VOICE]: I am the part that felt everything while you kept trying again. I am the one that never got to leave.")
+        return wait_for_choice([
+            ("Fall silent", self.stage_juger)
+        ])
+
+    # BLACK STAGE: JUGER ----------------------------
+
+    def stage_juger(self):
+        scr("The darkness shifts under your feet. A faint outline appears ahead: tall, familiar, wrong. Mr.Juger steps out of the black, but his edges flicker and bleed. Sometimes you see the neighbour. Sometimes a doctor in a white coat. Sometimes nothing but a hollow cut-out where a person should be.")
+        return wait_for_choice([
+            ("Talk to him", self.juger_talk),
+            ("Just watch", self.juger_watch)
+        ])
+
+    def juger_watch(self):
+        scr("You don’t speak at first. You only watch as his form twitches between shapes. His mouth is shut, but his voice still reaches you, out of sync with his body.")
+        scr('"You\'re late again," he whispers, though his jaw never moves. "You should have listened," he adds, staring straight through you.')
+        return wait_for_choice([
+            ("Answer him", self.juger_talk)
+        ])
+
+    def juger_talk(self):
+        scr("You ask if this is still the same day, if he is real here, if he is your neighbour or your doctor. His reply comes in broken layers: small talk glued to clinical notes.")
+        scr('"It\'s always the twenty fourth... vitals steady... don\'t worry about it, kid... patient remains... just another morning..."')
+        return wait_for_choice([
+            ("Keep listening", self.juger_fade),
+            ("Ask who the patient is", self.juger_patient)
+        ])
+
+    def juger_patient(self):
+        scr("You ask him who the patient is. For a moment, his outline goes completely blank, like someone erased him. When he comes back, his voice is quieter.")
+        scr('"You tell me," he says. Then he smiles, and the smile does not belong to either version of him you know.')
+        return wait_for_choice([
+            ("Say nothing", self.juger_fade)
+        ])
+
+    def juger_fade(self):
+        scr("You try to step closer, but the more you move, the more transparent he becomes. His body fades into the dark, his voice stretching into a long, thin echo until there is nothing left of him at all.")
+        return wait_for_choice([
+            ("Look around", self.stage_road)
+        ])
+
+    # ROAD OF ACCIDENTS ----------------------------
+
+    def stage_road(self):
+        scr("With a blink, the black beneath you hardens into a strip of road floating in the void. No sky, no buildings—just white paint lines stretching into endless darkness. You know this place. This is where the car hit you. Where the truck did. Where so many endings began.")
+        return wait_for_choice([
+            ("Step into the middle", self.road_center),
+            ("Stay at the edge", self.road_edge)
+        ])
+
+    def road_center(self):
+        scr("You walk to the middle of the road and wait. No headlights. No engine noise. Instead, figures made of dim light appear along the asphalt—versions of you caught in mid-fall. One reaching out, one already curled on the ground, one thrown sideways in slow motion.")
+        return wait_for_choice([
+            ("Call to them", self.road_call),
+            ("Watch in silence", self.road_watch)
+        ])
+
+    def road_edge(self):
+        scr("You stay at the edge and watch as pale outlines of yourself replay the same half-second of impact over and over. None of them finish the fall. Each one resets just before hitting the ground, like broken clips on a loop.")
+        return wait_for_choice([
+            ("Call to them", self.road_call),
+            ("Listen to the voice", self.road_voice)
+        ])
+
+    def road_call(self):
+        scr("You shout for them to move, to get off the road, to stop doing this. None of the versions of you react. They are not people anymore, just recordings of decisions you already made and cannot unmake.")
+        return wait_for_choice([
+            ("Listen", self.road_voice)
+        ])
+
+    def road_watch(self):
+        scr("You force yourself to keep watching. Each replay feels heavier, like your chest is filling with lead. You realise every impact you treated like a test was a real injury somewhere you couldn’t see.")
+        return wait_for_choice([
+            ("Listen", self.road_voice)
+        ])
+
+    def road_voice(self):
+        scr("[VOICE - ANGRY]: You wanted to know what would happen.\n[VOICE - CRYING]: I felt every one of those.\nThe figures on the road freeze, then fade out, leaving you alone on the floating strip of asphalt in the dark.")
+        return wait_for_choice([
+            ("Let the road go", self.stage_homeless)
+        ])
+
+    # HOMELESS MAN REVEALED ----------------------------
+
+    def stage_homeless(self):
+        scr("The road dissolves beneath your feet. When the black settles, a single post rises up out of the void, and beside it sits the homeless man, just as he did at the corner in your loops. This time he is not blended into the background. He is sharp, solid, more real than the darkness around him.")
+        return wait_for_choice([
+            ("Approach him", self.homeless_approach),
+            ("Keep your distance", self.homeless_distance)
+        ])
+
+    def homeless_approach(self):
+        scr("You walk closer until you are standing right in front of him. His head lifts, and his eyes meet yours fully for the first time. There is no haze there, no confusion—only a tired kind of knowing.")
+        return wait_for_choice([
+            ("Ask who he is", self.homeless_who),
+            ("Ask what he saw", self.homeless_saw)
+        ])
+
+    def homeless_distance(self):
+        scr("You stay a few steps away, afraid that moving closer will break this strange clarity. Even from here, you feel his attention like a weight, settling on every bruise, every bandaid, every loop burned into you.")
+        return wait_for_choice([
+            ("Ask who he is", self.homeless_who),
+            ("Ask what he heard", self.homeless_heard)
+        ])
+
+    def homeless_who(self):
+        scr("You ask him who he really is. He huffs out a breath that might be a laugh, might be a sigh.")
+        scr('"I\'m just the one who keeps count," he says. "Every time you \'go away\', I\'m the one who notices how long you take to come back."')
+        return wait_for_choice([
+            ("Ask what he means", self.homeless_heard)
+        ])
+
+    def homeless_saw(self):
+        scr("You ask what he saw each time you got hurt. His shoulders sag a little more.")
+        scr('"Saw you fall. Saw you bleed. Saw the world stitch itself back up around you like nothing happened," he says. "Then I waited for the beep."')
+        return wait_for_choice([
+            ("Ask about the beep", self.homeless_heard)
+        ])
+
+    def homeless_heard(self):
+        scr("You ask him about the beep he mentioned before. His gaze drifts past you, into the black.")
+        scr('"They go away," he says slowly. "Then I hear a beep. Then they\'re back. You thought you were the only one inside this, but someone else has been listening the whole time."')
+        return wait_for_choice([
+            ("Fall silent", self.homeless_fade)
+        ])
+
+    def homeless_fade(self):
+        scr("You want to ask more, but the edges of his shape blur, as if the dark is pulling him back. His eyes stay clear for a heartbeat longer, then blink out like someone turned off a light. You are alone again.")
+        return wait_for_choice([
+            ("Let the corner go", self.stage_chain)
+        ])
+
+    # CHAIN-SNATCH STREET GLITCHED ----------------------------
+
+    def stage_chain(self):
+        scr("The empty corner peels away. Now you stand in the outline of the crowded street, but all the people are silhouettes cut out of deeper shadow. Their movements are wrong—too sharp, then too slow, like a broken animation trying to catch up with itself.")
+        return wait_for_choice([
+            ("Step into the crowd", self.chain_step),
+            ("Watch from outside", self.chain_watch)
+        ])
+
+    def chain_step(self):
+        scr("You move through the silhouettes, but they do not react. Their hands pass through you as if you are smoke. One figure reaches for another's neck, where a dull grey chain hangs. Just before contact, the scene snaps back a few frames and plays again. Over and over. A theft that never finishes, a wound that never opens.")
+        return wait_for_choice([
+            ("Try to interrupt", self.chain_interrupt),
+            ("Let it loop", self.chain_listen)
+        ])
+
+    def chain_watch(self):
+        scr("From the edge, you watch the same half-second of violence restart again and again. Grabbing hand, turning head, flash of chain—cut. Reset. Replay. Nothing changes, no matter how many times it runs.")
+        return wait_for_choice([
+            ("Try to interrupt", self.chain_interrupt),
+            ("Listen to the voice", self.chain_listen)
+        ])
+
+    def chain_interrupt(self):
+        scr("You throw yourself between the silhouettes, shouting, pushing, waving your arms. Your hands pass straight through them. The loop does not even flicker. It has never needed you to complete itself; it exists as a pattern, not a memory.")
+        return wait_for_choice([
+            ("Listen", self.chain_listen)
+        ])
+
+    def chain_listen(self):
+        scr("[VOICE - ANGRY]: You wanted to see what would happen.\n[VOICE - CRYING]: You never asked what it was doing to me.\nEvery silhouette on the street turns its empty head toward you at once. For a moment, a hundred featureless faces stare straight into you, and you feel the weight of every reckless choice you turned into an experiment.")
+        return wait_for_choice([
+            ("Look away", self.chain_fade)
+        ])
+
+    def chain_fade(self):
+        scr("When you can’t bear it anymore, you shut your eyes. When you open them again, the crowd is gone. The street, the buildings, even the ground under your feet have all melted back into pure black.")
+        return wait_for_choice([
+            ("Let the street go", self.stage_boy)
+        ])
+
+    # BOY IN CLASSROOM / STILL SELF ----------------------------
+
+    def stage_boy(self):
+        scr("Desks rise out of the dark, neat rows floating on nothing. At the far end sits the boy from the classroom, his chair and table anchored to an invisible floor. This time, he is not smiling.")
+        return wait_for_choice([
+            ("Go to him", self.boy_approach),
+            ("Stay at the door", self.boy_door)
+        ])
+
+    def boy_approach(self):
+        scr("You walk up to him and see the change clearly. His face is no longer blank or gently kind. His eyes are heavy, rimmed with a tiredness that feels older than you. He taps his fingers on the desk, and each tap echoes like a distant medical beep.")
+        return wait_for_choice([
+            ("Ask who he is", self.boy_who),
+            ("Sit beside him", self.boy_sit)
+        ])
+
+    def boy_door(self):
+        scr("You stand where a doorway should be, watching him from a distance. Every so often, his lips move in tiny shapes without sound. Once, you are sure you see the words 'wake up' form on his mouth before they smooth back into a straight line.")
+        return wait_for_choice([
+            ("Step closer", self.boy_approach)
+        ])
+
+    def boy_who(self):
+        scr("You ask him who he really is. The answer comes from everywhere at once, not from his mouth, but from the space around you.")
+        scr('"I\'m the part of you that stayed still," the voice says. "The part that watched you run into every wall and couldn\'t make you stop."')
+        return wait_for_choice([
+            ("Apologise", self.boy_apologise)
+        ])
+
+    def boy_sit(self):
+        scr("You sit down at the next desk. Neither of you speaks for a while. The dark around the classroom hums softly, like lights you can\'t see. You think about every time you hesitated, every time you froze instead of acting. They all feel like they live in him.")
+        return wait_for_choice([
+            ("Ask who he is", self.boy_who)
+        ])
+
+    def boy_apologise(self):
+        scr("You tell him you’re sorry—for not listening, for pushing, for ignoring the warnings you gave yourself. The boy tilts his head, considering your words with an unreadable expression.")
+        scr('"You\'re not finished yet," he says quietly. "That\'s the problem."')
+        return wait_for_choice([
+            ("Let him go", self.boy_fade)
+        ])
+
+    def boy_fade(self):
+        scr("You blink, and the desks are empty. The boy is gone. Only the echo of his last word hangs in the dark like a note that refuses to die: yet.")
+        return wait_for_choice([
+            ("Stand alone", self.mindvoice_final)
+        ])
+
+    # FINAL MINDVOICE / NO WAKE YET ----------------------------
+
+    def mindvoice_final(self):
+        scr("The black closes in, tighter than before, until even the suggestion of floor and furniture disappears. You are nowhere and everywhere, and you are not alone. The crying and the anger finally settle into one presence standing right behind you.")
+        return wait_for_choice([
+            ("Don’t turn around", self.mindvoice_talk)
+        ])
+
+    def mindvoice_talk(self):
+        scr("[VOICE]: Why won\'t you wake up?\n[VOICE]: Why do you keep dragging us back here?\nYou speak to it like another person, but you know now that it isn\'t. It is you. Or rather, the part of you that never leaves the bed, never escapes the machines, never gets to pretend the pain is a puzzle to solve.")
+        return wait_for_choice([
+            ("Ask what it wants", self.mindvoice_want)
+        ])
+
+    def mindvoice_want(self):
+        scr("You ask what it wants from you. The answer arrives in jagged pieces, every shard a different version of your reflection.")
+        scr('"I want you to listen," it says. "I want you to stop using my pain as your playground. I want you to understand that this story you keep living is built on a body that is still lying there, trying to breathe."')
+        return wait_for_choice([
+            ("Fall silent", self.mindvoice_end)
+        ])
+
+    def mindvoice_end(self):
+        scr("The dark around you tightens like closing curtains. Shapes flicker at the edges—Mr.Juger, the homeless man, the crowd of silhouettes, the boy at his desk—all of them overlaid with something colder: gloves, monitors, white coats, metal rails. None of them step closer. They only watch as the stage closes on you.")
+        scr("[VOICE]: Next time... listen.\nThere is no rush of waking, no jolt, no alarm. You don\'t open your eyes. You just hang there, between the loop and the body it belongs to, knowing that when you finally surface, the date will still be the twenty fourth of July—and that you are not the only one trapped inside it.")
+        return wait_for_choice([
+            ("...", self.manager.chapter8.intro)
+        ])
+
     
         
 
@@ -1141,6 +1427,7 @@ class SceneManager:
         self.chapter5_1 = Chapter5_1(self)
         self.chapter5_2 = Chapter5_2(self)
         self.chapter6 = Chapter6(self)
+        self.chapter7 = Chapter7(self)
         self.current_scene = self.chapter1.ch1
 
     def run(self):
