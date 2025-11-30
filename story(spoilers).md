@@ -139,3 +139,40 @@ If they choose to **return to the school**, they wander its empty corridors, dra
 On the street, they once again encounter **Mr. Juger** standing in the familiar place at the familiar time. This time, fueled by their experiments and confusion, they choose their questions more deliberately. They can ask him directly about a **time loop**, or about **time** itself. If they ask about the **loop**, he admits he has heard stories-tales of people reliving the same day repeatedly until they accomplish some essential task that finally frees them. But he quickly adds that he doesn't believe any of it, dismissing it as a fairy tale. If they ask about **time**, he laughs, calling it a philosophical topic beyond his ability to explain, brushing it off as something unusual to discuss so casually. The conservation leaves the protagonist with the sense that Juger **knows more than he shows**, but refuses to acknowledge it directly.
 
 By the end of Chapter 5_1, several key ideas crystallize. The protagonist learns that **pain never truly ends**; it simply seems to be displaced, accumulating somewhere else-possibly inside the crying man they heard while unconscious. The world around them feels increasingly **scripted and hollow**: blank books, a silent boy, NPCs repeating roles without genuine depth. Mr.Joger acknowledges the concept of a loop but pretends not to believe in it, hinting at a gap between what he says and what he knows. This route frames the loop as something that may be **real in consequences but unreal in setting**, pushing the protagonist further toward the truth that there is another layer of reality underneath everything they see.
+
+## Chapter 5_2 - A Questioning Decision
+
+You wake up in the same day again, but this time the pain you put yourself through in earlier loops feels pointless. Instead of testing your body, you decide to test the **world**. If this really is a loop, then the people inside it might  know something, even if they never say it directly. Today, you choose to talk, listen and watch carefully. No more forcing accidents on yourself-only questions, answers, and whatever slips through the cracks.
+
+You start by deciding who to approach. Mr. Juger stands where he always does, walking the same path. The homeless man sits at his usual corner. The crossing where you have been hurt before still bustles with people and cars. You promise yourself you will not rush into danger this time. Instead, you will **observe** it.
+
+---
+
+### Talking to Mr. Juger
+
+when you walk up to Mr. Juger, you do not greet him casually like before. You stop him and ask what he did **yesterday**, hoping to catch a detail that doesn't fit. He pauses for a little too long, then gives a simple safe answer: "Same as always." He does not meet your eyesmwhen he says it That hesitation bothers you more than the words themselves.
+
+You push further and ask if he remembers seeing you at the same time and place yesterday. He frowns, calls you "kid", and uses the wrong name for you. When you correct him, he laughs it off as a mistake, but the slip lingers in your mind. You decide not to let it go. You ask directly if he has ever felt like this day has happened before. For a moment, his face goes blank, like someone turned off his expression. Then he smiles again and asks if you have been sleeping well, telling you not to overthink things.
+
+As he talks, some of his words feel wrong. In the middle of a normal sentence about the weather, you hear fragments like "monitoring" and "stable", words that don't belong on a quiet street. You cannot tell if he actually said them, or if your mind forced them in. When you blink, the odd words are gone, replaced by something ordinary. You leave him, feeling like you almost heard something important but lost it as soon as you noticed it.
+
+---
+
+### The Homeless Man's Answers
+
+you move on to the homless man you have seen before.this time, you sit down nearby and start a real conversation, asking what he sees **anyone get hurt on this road** , his eyes cloud over . he says he has seen "someone"fall, get hit, bleed-more than once. hwen you ask him when that happened, he only repeats "today", as if the word is stuck and no other day exists for him.
+
+you ask what the person looked like. he stares at yoy for a moment, looks over your tired face and the marks on your arm, then looks away without answering. you feel as if he is comparing you to someone he cannot fully remember. when you change the topic and ask what **day**
+it is, he answers "24th of July" right away. but when you ask again, he hesitates and says, "I only remember this one," like his memory begins and ends there.
+
+one last qeustion:do people disappear and come back the same as before? he nods slowly and says, "they go away. then I hear a beep. ten they are back." he does not explain what the beep is , and you are not sure you want to know. you stand up and leavehim, carrying his words with you like a weight.
+
+---
+
+### Watching the crossing
+
+Finally, you decide to stop talking and just **watch**. You stand at the road crossing where, in other versions of this day, you have been hit, stabbed or nearly killed. This time, you stay out of harm's way and observe the world instead. Cars pass. People walk, talk. and stare at their phones. At frist everything looks normal, but the longer you watch, the stranger it feels.
+
+A Woman repeats the exact same sentence twice in the same tone, as if a line of dialogue got stuck. A man looks both ways, crosses the road, and then appears back at the curb again without you ever seeing him return.The loop is no longer just about you getting hurt. It is baked into the people and the space around you.
+
+You decide to focus on **sounds**. You close your eyes and listen. Footsteps, engines, distant chatter. Underneath all of it, you begin to notice a slow, steady pattern: a short tone, a pause, then another tone. It feels like a machine keeping count of something you cannot see. Your heartbeat starts to match it, and breathing becomes heavier, as if your chest is syncing with the rhythm.
