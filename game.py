@@ -1889,8 +1889,657 @@ class Chapter9:
             ("Wake up", self.manager.chapter10.intro)
         ])
 
-    
-        
+class Chapter10:
+    def __init__(self, manager):
+        self.manager = manager
+
+    def intro(self):
+        scr("Chapter 10: Deliberate Breaks")
+        return wait_for_choice([
+            ("Continue", self.wake)
+        ])
+
+    def wake(self):
+        scr("You wake up again to the same ceiling and the same quiet room, but this morning your mind feels sharper than ever. The black stage, the hospital flashes, the changing city—all of it stacks into one clear idea: this world is not normal. It bends with you. It hurts with you. And today, you decide to see how far it will bend when you push it on purpose.")
+        return wait_for_choice([
+            ("Think it through", self.plan),
+            ("Get up immediately", self.stand)
+        ])
+
+    def plan(self):
+        scr("You lie still and lay out a plan in your head. No more random flailing, no more accidents just to see if you survive. You will repeat some things exactly, change others completely, and watch what the world does in response. For once, the loop is not just happening to you—you are going to treat it like an experiment.")
+        return wait_for_choice([
+            ("Stand up", self.stand)
+        ])
+
+    def stand(self):
+        scr("You sit up and stand, feeling the familiar heaviness in your limbs. The clock still claims it is 7:00 AM, 24th of July, but you don’t stare at it like a threat this time. You nod at it like a label on a folder. Today’s file. Today’s test. You take a breath and decide where to go first.")
+        return wait_for_choice([
+            ("Go to Mr.Juger", self.to_juger),
+            ("Go to the road", self.to_road_first)
+        ])
+
+    def to_juger(self):
+        scr("You walk the familiar path toward where Mr.Juger usually stands. The houses, the fence, the uneven pavement all slide by like scenery you’ve memorised. This time you are not just going to greet him and move on. This time you are bringing hospital words into the street.")
+        return wait_for_choice([
+            ("Watch him first", self.juger_watch),
+            ("Greet him directly", self.juger_greet)
+        ])
+
+    def juger_watch(self):
+        scr("You stop before he notices you and simply watch. Mr.Juger checks his watch, shifts his weight, glances down the road. For a second, his outline flickers, like you’re seeing him from two angles at once—neighbour on the street and man under harsh white lights. You decide it’s time to talk.")
+        return wait_for_choice([
+            ("Greet him", self.juger_greet)
+        ])
+
+    def juger_greet(self):
+        scr("You step forward and say, 'Good morning.' He looks up and smiles in that tired, familiar way, answering with almost the same line he always uses. Almost. There is a small extra word there, a hint that the script is drifting. Before he can settle, you push.")
+        return wait_for_choice([
+            ("Ask about vitals", self.juger_vitals),
+            ("Ask about the night", self.juger_night)
+        ])
+
+    def juger_vitals(self):
+        scr("You ask him, as casually as you can, how your vitals looked yesterday. The street should not be able to hold that sentence, but it does. For a heartbeat, his whole body goes still, and when he answers, his tone is wrong—too calm, too practiced, like a doctor giving a report. Then he blinks and laughs it off, trying to fold it back into a neighbour’s small talk.")
+        return wait_for_choice([
+            ("Press him more", self.juger_press),
+            ("Leave him for now", self.after_juger)
+        ])
+
+    def juger_night(self):
+        scr("You ask him if the beeps kept going all night. The word hangs in the air heavier than it should. Mr.Juger opens his mouth, closes it once, then says something safe about sleeping badly, about old age and restless nights. Beneath his voice, you hear an echo that doesn’t belong to this street at all—someone checking a monitor, watching a line on a screen.")
+        return wait_for_choice([
+            ("Press him more", self.juger_press),
+            ("Leave him for now", self.after_juger)
+        ])
+
+    def juger_press(self):
+        scr("You push a little harder, asking if he feels like he has done this morning before. His eyes unfocus for a moment, like he’s listening to a sound only he can hear. For that moment, he looks more like the doctor you glimpsed than the neighbour you know. Then he shakes his head and tells you not to think too much, that some days just blend together. The words feel rehearsed.")
+        return wait_for_choice([
+            ("Walk away", self.after_juger)
+        ])
+
+    def after_juger(self):
+        scr("You walk away from him, heart beating faster. He changed. Not much, not obviously, but enough. A new word here, a stumble there, a tone that didn’t belong. The loop isn’t perfectly copying his lines anymore. It is rewriting them with you.")
+        return wait_for_choice([
+            ("Go to the road", self.to_road),
+            ("Visit the homeless man", self.to_homeless)
+        ])
+
+    def to_road_first(self):
+        scr("You decide to begin with the road where so many of your days have ended in metal and blood. The path there feels burned into your muscles by now. You follow it without thinking, but your mind stays sharp, ready to see what happens when you change your part in the scene.")
+        return wait_for_choice([
+            ("Continue", self.to_road)
+        ])
+
+    def to_road(self):
+        scr("You reach the familiar stretch of asphalt. The place where cars hit you, where trucks didn’t slow down, where you tested how far you could push pain. Today, you stand at the edge first, watching. The traffic feels lazy, slightly out of sync with your memory, like the scene is waiting for your cue.")
+        return wait_for_choice([
+            ("Repeat old pattern", self.road_repeat),
+            ("Break it completely", self.road_break)
+        ])
+
+    def road_repeat(self):
+        scr("You decide to repeat an older choice as closely as you can. You wait until about the time you remember the car appearing, then step into the road at the same angle, in the same place. Your chest tightens, expecting the impact. A car does appear, but this time it slows earlier, brakes softer, and stops before reaching you. The scene lines up almost right, but not perfectly.")
+        return wait_for_choice([
+            ("Step back", self.after_road),
+            ("Stay and test more", self.road_test_driver)
+        ])
+
+    def road_break(self):
+        scr("Instead of stepping into the lane, you turn your back on the road at the exact moment you used to walk into it. You hear a car rush by behind you, feeling the wind on your skin, but there is no impact, no shattering glass, no crunch of bones. The danger passes like a missed beat in a song. The scene rewrote itself around your refusal.")
+        return wait_for_choice([
+            ("Look back once", self.after_road),
+            ("Move on quickly", self.after_road)
+        ])
+
+    def road_test_driver(self):
+        scr("You stand in front of the stopped car longer than you should, staring at the driver. Their face feels wrong, unfinished around the edges, like a sketch the world never expected you to stare at this closely. When they lower the window, their mouth moves, but no sound comes out at first. Eventually a generic scolding line pushes through, flat and flavourless, as if the script only remembered it at the last second.")
+        return wait_for_choice([
+            ("Step aside", self.after_road)
+        ])
+
+    def after_road(self):
+        scr("You step back to the sidewalk, your heart still pounding, but not from fear of dying. It is the fear of what you are doing to this place. The more precisely you repeat your old mistakes, the more the world tries to replay them. The more sharply you deviate, the more it scrambles to keep up.")
+        return wait_for_choice([
+            ("Visit the homeless man", self.to_homeless),
+            ("Go to the school", self.to_school)
+        ])
+
+    def to_homeless(self):
+        scr("You turn toward the corner where the homeless man sits, the one who spoke of people going away and coming back with the sound of a beep. Today, you aren’t coming to ask about the day or the weather. You’re coming to ask about the frame around all of this.")
+        return wait_for_choice([
+            ("Approach him", self.homeless_talk)
+        ])
+
+    def homeless_talk(self):
+        scr("You sit near him, close enough to hear him breathe. He opens one eye and looks at you, recognition deeper now than in the early loops. You don’t waste time. You ask if he heard the beeps last night again, if he noticed how long you were gone.")
+        return wait_for_choice([
+            ("Listen to his answer", self.homeless_answer)
+        ])
+
+    def homeless_answer(self):
+        scr("He frowns, like you are asking him to remember something heavy. He says he heard them, yes, softer than before but still there. Says sometimes it feels like hours between the beeps, sometimes only seconds, but he always knows when 'you' are gone and when 'you' are back. He taps his temple when he says you, as if he is talking about more than one version of you at once.")
+        return wait_for_choice([
+            ("Ask what he sees", self.homeless_see),
+            ("Leave it be", self.after_homeless)
+        ])
+
+    def homeless_see(self):
+        scr("You ask what he sees when you are gone. He looks past you, into some middle distance, and says he doesn’t see you anywhere on the street. Just hears the beeps and the voices talking over them. The more he speaks, the more his words tilt toward places that don’t exist in this city—rooms with white walls, shoes that squeak on polished floors, machines that sigh.")
+        return wait_for_choice([
+            ("Thank him", self.after_homeless)
+        ])
+
+    def after_homeless(self):
+        scr("You thank him and stand, feeling a strange guilt settle in your chest. Every time you 'tested' a death here, he was somewhere in the background, listening to the aftermath in another world. He is not just scenery; he has been counting your disappearances.")
+        return wait_for_choice([
+            ("Go to the school", self.to_school),
+            ("Head into the city", self.city_hub)
+        ])
+
+    def to_school(self):
+        scr("You make your way to the school again, the place where the boy waits in his frozen classroom. Today, you are not here to pull secrets out of him. You are here to acknowledge him as part of the system you’ve been pulling apart.")
+        return wait_for_choice([
+            ("Enter the school", self.school_entry)
+        ])
+
+    def school_entry(self):
+        scr("The halls greet you with the same echo, the same stillness, but now you read them differently. You see them as corridors inside your own head, lined with rows of desks holding versions of yourself that never got up. You walk to the familiar doorway and find the boy exactly where he always is, sitting, watching the window.")
+        return wait_for_choice([
+            ("Talk to him", self.school_boy_talk),
+            ("Sit in silence", self.school_boy_sit)
+        ])
+
+    def school_boy_talk(self):
+        scr("You sit near him and ask if he ever gets tired of watching you run into the same walls. His eyes flick to you, then back to the window. He says that he knew you would stop eventually, or break trying. When you ask what he means, he just says he is the part that waits to see which one you choose.")
+        return wait_for_choice([
+            ("Stay a bit longer", self.school_boy_stay)
+        ])
+
+    def school_boy_sit(self):
+        scr("You sit down at the next desk without saying anything. The two of you share a silence that feels heavier than most conversations. You realise you have spent so many loops moving, testing, dying, that you rarely just sat still with yourself. In that quiet, you feel the ache of all the times you forced the story forward when it could have rested.")
+        return wait_for_choice([
+            ("Say something", self.school_boy_talk)
+        ])
+
+    def school_boy_stay(self):
+        scr("You stay until the room feels too full of all the words you are not ready to hear. When you finally stand, the boy does not ask you to stay or go. He only tells you not to forget that staying still is also a choice, and sometimes the only one that doesn’t make things worse.")
+        return wait_for_choice([
+            ("Leave the school", self.after_school)
+        ])
+
+    def after_school(self):
+        scr("You leave the school with your steps echoing behind you, each one a reminder that your movement drives this place. The experiments you ran today have taught you something you didn’t expect: you are not powerless here, but your power cuts both ways. Every forced glitch, every test of pain, lands on someone real.")
+        return wait_for_choice([
+            ("Explore the city more", self.city_hub),
+            ("Go home early", self.end_day)
+        ])
+
+    def city_hub(self):
+        scr("You wander deeper into the city, testing smaller things now instead of big ones. You repeat a path exactly and see some details line up like they have before. You change your route sharply and feel the world wobble to fill in the gaps. Shop signs twitch between messages. Background people glitch for a heartbeat when you stare too long. The city behaves less like a place and more like a story trying to keep up with you.")
+        return wait_for_choice([
+            ("Test one more thing", self.city_test),
+            ("Stop experimenting", self.end_day)
+        ])
+
+    def city_test(self):
+        scr("You pick one small, meaningless detail—a bench, a sign, a doorway—and force yourself to pass it three times in the same way. Each time, something about it shifts. A word changes, a crack in the wood moves, the angle of the light tilts. The loop is not an exact copy machine. It is an active process, redrawing the day again and again.")
+        return wait_for_choice([
+            ("Enough for today", self.end_day)
+        ])
+
+    def end_day(self):
+        scr("By the time you start walking back home, your head is heavy with observations and a tight, low guilt. You proved that you can bend this place, that nothing here is perfectly fixed, that people and streets and signs all drift when you press them. But you also proved that every pressure you apply pulls on the nerves of someone lying under real lights, breathing real air, feeling real pain.")
+        return wait_for_choice([
+            ("Go home", self.go_home)
+        ])
+
+    def go_home(self):
+        scr("You step back into your room, the same four walls, the same ceiling, the same bed that has caught you after so many bad endings. Tonight, you don’t throw yourself into another test. You sit on the edge of the mattress and realise that experimenting with your own suffering might not be progress at all—it might just be a new way to hurt the part of you that never gets to leave the hospital bed.")
+        return wait_for_choice([
+            ("Lie down", self.sleep)
+        ])
+
+    def sleep(self):
+        scr("You lie back and let the day replay in your mind. The changed words, the hesitant answers, the strained edges of the world. You know now that you can keep pushing for glitches and glimpses, but every time you do, something real has to hold that strain. As your eyes close, not from injury but from sheer exhaustion, you understand that tomorrow’s choice won’t just be about surviving the loop. It will be about deciding how much more of this you are willing to force yourself through.")
+        return wait_for_choice([
+            ("...", self.manager.chapter11.intro)
+        ])
+
+class Chapter11:
+    def __init__(self, manager):
+        self.manager = manager
+
+    def intro(self):
+        scr("Chapter 11: The Frayed Edge")
+        return wait_for_choice([
+            ("Continue", self.wake)
+        ])
+
+    def wake(self):
+        scr("You wake up again to the same ceiling and the same quiet, but the sharp edge of curiosity from yesterday has dulled into a deep, bone-heavy tiredness. The memory of the experiments you ran weighs on you—the pushed glitches, the forced answers, the way the world strained to keep up. For the first time, you are not excited to see what you can break. You are afraid of how much more breaking there is left to do.")
+        return wait_for_choice([
+            ("Stay in bed a moment", self.still),
+            ("Get up slowly", self.rise)
+        ])
+
+    def still(self):
+        scr("You stay lying down, staring at the ceiling cracks that you’ve traced a hundred times. You think about the flashes of white, the hints of metal and straps, the wordless presence of a body that felt every crash you turned into an experiment. The thought that your curiosity might be hurting that body sinks in, heavy and cold.")
+        return wait_for_choice([
+            ("Sit up", self.rise)
+        ])
+
+    def rise(self):
+        scr("You sit up and swing your legs over the side of the bed. The clock is there, as always, repeating its line: 7:00 AM, 24th of July. You look at it only long enough to confirm what you already knew, then let your eyes drift away. Today is not a day for new tests. Today is a day for seeing what happens when you do as little as possible.")
+        return wait_for_choice([
+            ("Leave the room", self.leave_room)
+        ])
+
+    def leave_room(self):
+        scr("You open the door and step into the hallway, then out into the street. The air feels thinner, the light flatter, as if the world is tired too. You decide you will walk, but not chase. Watch, but not poke. If this loop wants to show you something, it will have to do it without you dragging it into the open.")
+        return wait_for_choice([
+            ("Go toward Mr.Juger", self.to_juger),
+            ("Go to the bench near the crossing", self.to_bench)
+        ])
+
+    def to_juger(self):
+        scr("You walk toward the place where Mr.Juger usually appears. Your feet know the way, even if your mind is slower than usual. When you spot him, standing in his familiar spot, you feel less like confronting him with questions and more like seeing how he behaves when you don’t pull him off script.")
+        return wait_for_choice([
+            ("Approach him", self.juger_meet),
+            ("Watch from a distance", self.juger_watch)
+        ])
+
+    def juger_watch(self):
+        scr("You hang back and watch as he adjusts his glasses, checks his watch, and glances down the road. It all looks ordinary on the surface, but now you notice the stiffness in his shoulders, the way his head turns as if listening for something far away. Even without your interference, there is a tension humming beneath his movements.")
+        return wait_for_choice([
+            ("Approach him", self.juger_meet),
+            ("Leave him alone", self.after_juger)
+        ])
+
+    def juger_meet(self):
+        scr("You walk up and greet him with a simple 'Good morning.' This time, you don’t shove hospital words into the conversation. He responds with a normal line about the day, but buried under it you hear a faint echo—a calmer, more clinical version of his voice asking a question you can’t quite catch. For a moment, it feels like two people are speaking through his mouth at once.")
+        return wait_for_choice([
+            ("Answer simply", self.juger_simple),
+            ("Say nothing more", self.after_juger)
+        ])
+
+    def juger_simple(self):
+        scr("You tell him you are 'managing' and leave it at that. He nods with a look that sits somewhere between neighbourly concern and professional assessment. It is the first time you feel like maybe he is watching over more than just this street, and you are not sure if that comforts you or scares you.")
+        return wait_for_choice([
+            ("Walk away", self.after_juger)
+        ])
+
+    def after_juger(self):
+        scr("You walk away without forcing the scene to crack open. Even without your prodding, his words and presence are heavy with things unsaid. The city does not need you to shout at it to show its seams anymore. They are starting to show on their own.")
+        return wait_for_choice([
+            ("Go sit by the crossing", self.to_bench),
+            ("Wander aimlessly", self.wander)
+        ])
+
+    def to_bench(self):
+        scr("You head to the bench near the crossing, the place where so many of your violent endings began. The road lies ahead, quiet for now, the crossing light blinking its familiar pattern. Instead of stepping into the flow, you sit down and decide not to move for a while.")
+        return wait_for_choice([
+            ("Stay seated", self.bench_still)
+        ])
+
+    def bench_still(self):
+        scr("You sit and watch the world try to run around you. A car passes. A cyclist glides by. A few people cross the street. At first it all seems normal, but then you notice gaps—moments where everything pauses for a fraction of a second, like the scene forgot what to do next. The beeping rhythm, once buried in the noise, rises to the surface, steady and patient.")
+        return wait_for_choice([
+            ("Close your eyes", self.bench_close),
+            ("Keep watching", self.bench_watch)
+        ])
+
+    def bench_watch(self):
+        scr("You keep your eyes open and track every small glitch. A man lifts his hand to check his watch, then resets to that pose again when you look away and back. A woman’s lips move in conversation, but the words reach your ears a heartbeat late. The world feels like a film reel slipping on the projector.")
+        return wait_for_choice([
+            ("Close your eyes", self.bench_close)
+        ])
+
+    def bench_close(self):
+        scr("You close your eyes and let the visual noise drop away. Without it, the soundscape sharpens. Footsteps blur into a distant murmur, and underneath it all, the beep comes into focus. A short tone, a pause, another tone. It is no longer pretending to be anything else. Your breathing starts to fall into sync with it whether you want it to or not.")
+        return wait_for_choice([
+            ("Listen", self.bench_listen)
+        ])
+
+    def bench_listen(self):
+        scr("As you listen, other sounds slip in at the edges. A voice says something about 'stability.' Another asks how long it has been. A third voice—calm, professional—mentions your name followed by numbers you don’t recognise. The bench under you feels less like wood now and more like something narrow and hard, like a bed with rails.")
+        return wait_for_choice([
+            ("Open your eyes", self.fracture_start)
+        ])
+
+    def fracture_start(self):
+        scr("You open your eyes, but for a split second, you do not see the street. You see white. A ceiling with harsh rectangular lights. The outline of machines standing guard. The ghost of straps around wrists that are not moving. Then the image snaps back to the crossing, colours wrong for a moment before they settle.")
+        return wait_for_choice([
+            ("Try to hold onto it", self.fracture_pull),
+            ("Let it pass", self.fracture_pass)
+        ])
+
+    def fracture_pull(self):
+        scr("You try to hold onto the image, to drag yourself back into that white room, but the harder you pull, the more the world around you judders. Cars freeze mid-roll. People hang mid-step. The bench feels like it is tilting under you. A sharp pain stabs through your chest, as if some invisible wire has been pulled too tight.")
+        return wait_for_choice([
+            ("Stop fighting", self.fracture_drop)
+        ])
+
+    def fracture_pass(self):
+        scr("You let the image drift away instead of chasing it. The street reasserts itself, but imperfectly. The colours feel oversaturated, the movements slightly too smooth. You realise that maybe this world is not meant to carry the full weight of the place you glimpsed, and every time you force it to, something fragile strains.")
+        return wait_for_choice([
+            ("Sit very still", self.fracture_drop)
+        ])
+
+    def fracture_drop(self):
+        scr("Everything goes unnaturally quiet. The cars, the people, even the wind seem to pause. For a heartbeat, you exist in a space between—no street, no hospital, just a weightless awareness that you are suspended over something you don’t fully understand. Then the sound rushes back in, the scene unfreezes, and life in the loop pretends nothing happened.")
+        return wait_for_choice([
+            ("Stand up", self.after_bench)
+        ])
+
+    def after_bench(self):
+        scr("You stand on shaky legs and step away from the bench. Your heart is pounding, but not from an external threat. It is from the knowledge that you were closer than ever to the real room, the real body, the real situation—and you still don’t know if you want to live there or here.")
+        return wait_for_choice([
+            ("Walk without a goal", self.wander),
+            ("Head toward the school", self.to_school)
+        ])
+
+    def wander(self):
+        scr("You walk with no destination, letting your feet choose the path. The city flows around you in a daze of almost-normality. Conversations almost make sense, then tilt sideways into words that belong to charts and procedures. The more you listen, the more you hear phrases like 'unresponsive' and 'we’ll wait and see' tucked between talk of groceries and traffic.")
+        return wait_for_choice([
+            ("Keep wandering", self.wander_more),
+            ("Go home", self.end_day_prompt)
+        ])
+
+    def wander_more(self):
+        scr("You start to feel as if you are walking through layers of transparent worlds stacked on top of each other. In one, this is just a street and you are just a person walking. In another, this is a corridor and someone is being wheeled past rooms you can’t see inside. The two realities rub against each other, sparks flying where they don’t quite align.")
+        return wait_for_choice([
+            ("Go home", self.end_day_prompt),
+            ("Head toward the school", self.to_school)
+        ])
+
+    def to_school(self):
+        scr("You drift back toward the school without entirely meaning to. The building looms like a memory you haven’t finished processing. You don’t go deep this time. You only stand by the gate, looking in at the quiet halls, feeling the weight of all the versions of you that walked through them in other loops.")
+        return wait_for_choice([
+            ("Leave it alone today", self.end_day_prompt),
+            ("Step inside briefly", self.school_brief)
+        ])
+
+    def school_brief(self):
+        scr("You step inside just long enough to smell the chalk and hear your footsteps echo once against the walls. The boy is somewhere inside, you can feel it, but you don’t go to him. Today, you aren’t here to look for more pieces. You are here to admit that every piece you already have is heavier than you know what to do with.")
+        return wait_for_choice([
+            ("Leave the school", self.end_day_prompt)
+        ])
+
+    def end_day_prompt(self):
+        scr("By now, the light has shifted in that familiar way that tells you this version of the day is winding down. Your head buzzes with the memory of white ceilings and strapped arms, of words about stability and waiting, of a world that exists just beyond the painted walls of this one. You are too tired to pull at those walls any more today.")
+        return wait_for_choice([
+            ("Go home", self.go_home)
+        ])
+
+    def go_home(self):
+        scr("You return to your room, the one constant stage that has welcomed you at the end of every path. You sit on the bed and feel the day settle on your shoulders. You think about how easily you could spend the next loops doing nothing but forcing more fractures, demanding more glimpses, dragging the hospital world into this one. You also think about the body that has to pay for every forced glitch.")
+        return wait_for_choice([
+            ("Lie down", self.sleep)
+        ])
+
+    def sleep(self):
+        scr("You lie back and close your eyes, not because you were knocked down or stabbed or crushed, but because you are simply done for today. Done with experiments. Done with pulling. Done with trying to solve something that might not want to be solved by force. As the beep drifts in from somewhere far away, softer than before, you let the thought pass through you: maybe the kindest thing you can do for both worlds is to move more gently, or not at all.")
+        return wait_for_choice([
+            ("...", self.manager.chapter12.intro)
+        ])
+
+
+class Chapter12:
+    def __init__(self, manager):
+        self.manager = manager
+
+    def intro(self):
+        scr("Chapter 12: Giving In to Tiredness")
+        return wait_for_choice([
+            ("Continue", self.wake)
+        ])
+
+    def wake(self):
+        scr("You wake up again, but this time there is no rush of panic, no surge of plans. The ceiling above you looks the same, the cracks in the paint follow the same paths, and the clock, if you chose to look at it, would still say 7:00 AM, 24th of July. You don’t look. You lie there in the quiet and feel how heavy your body and thoughts have become after everything you’ve tried.")
+        return wait_for_choice([
+            ("Stay still a bit longer", self.stay),
+            ("Sit up slowly", self.sit)
+        ])
+
+    def stay(self):
+        scr("You stay on your back, letting the familiar weight of the blanket and the pressure of the mattress hold you in place. Memories drift through you without urgency: the black stage, the hospital flashes, Mr.Juger’s half-slips, the homeless man’s beeps, the boy’s tired gaze. You don’t chase any of them. They pass through your mind like clouds.")
+        return wait_for_choice([
+            ("Sit up", self.sit)
+        ])
+
+    def sit(self):
+        scr("You sit up, moving carefully as if sudden motions might tear something fragile. You do not check the time. You already know what it will say, and for once that knowledge doesn’t sting as sharply. Instead, you think a simple thought: you are tired. Not just in this loop, but in all the loops behind it. And maybe you don’t have to fight every second of this day.")
+        return wait_for_choice([
+            ("Stand up", self.stand)
+        ])
+
+    def stand(self):
+        scr("You stand and let your eyes pass over the room without inspecting every corner. The bandages and scars are there if you want to look at them, but you choose not to add more today. You decide that this loop will be smaller, softer. No experiments. No forced cracks. Just a day walked without trying to break it open.")
+        return wait_for_choice([
+            ("Leave the room", self.leave_room)
+        ])
+
+    def leave_room(self):
+        scr("You open the door and step outside. The corridor, the stairs, the entrance, the street—each part of the morning feels like a scene you have rehearsed too many times. Instead of scanning for glitches, you simply move through it, letting the world be what it is without demanding more. The air is cool. Your steps are steady. There is nowhere you urgently need to be.")
+        return wait_for_choice([
+            ("Go toward Mr.Juger", self.to_juger),
+            ("Head toward the school", self.to_school),
+            ("Take a slow walk through the streets", self.to_city)
+        ])
+
+    def to_juger(self):
+        scr("You follow the path to where Mr.Juger usually stands, not to test him, but to see how it feels to meet him without a hidden agenda. When you spot him ahead, his familiar shape waiting in its familiar place, you feel less like confronting him and more like acknowledging that he has been here, loop after loop, whether you wanted him to be or not.")
+        return wait_for_choice([
+            ("Greet him", self.juger_meet),
+            ("Just walk past today", self.after_juger)
+        ])
+
+    def juger_meet(self):
+        scr("You walk up and say, 'Good morning,' with no trick in your voice. He replies with an uncomplicated line, asking how you are, telling you to take care. You answer simply that you are tired but managing. For a split second, you hear something else under his words—a gentler note, a professional cadence—but you don’t trap it, don’t demand he repeat it. You let it drift away.")
+        return wait_for_choice([
+            ("Say goodbye", self.after_juger)
+        ])
+
+    def after_juger(self):
+        scr("You leave him where he is, the moment small and almost ordinary. You don’t turn around to see if his outline flickers or if his eyes follow you too long. If there is a doctor inside that shadow, you choose not to drag him to the surface today. You keep walking.")
+        return wait_for_choice([
+            ("Head toward the school", self.to_school),
+            ("Wander the streets", self.to_city)
+        ])
+
+    def to_school(self):
+        scr("You walk toward the school without urgency. The building rises ahead, a stack of old routines and unfinished thoughts. In other loops, you came here to pry something out of it. Today, you come simply because it is part of your day, and avoiding it would be the same as pretending you never went to school at all.")
+        return wait_for_choice([
+            ("Enter the school", self.school_entry),
+            ("Walk past it this time", self.after_school)
+        ])
+
+    def school_entry(self):
+        scr("You step through the gate and into the quiet halls. The echo of your footsteps sounds familiar, but you don’t listen for hidden beeps in it. Classrooms sit open, neat and motionless. You go to the boy’s classroom almost by instinct, not to interrogate him, but to see him again.")
+        return wait_for_choice([
+            ("Sit with the boy", self.school_boy),
+            ("Glance in and leave", self.school_glance)
+        ])
+
+    def school_boy(self):
+        scr("You enter and take your usual place at a nearby desk. The boy turns, gives you his small, neutral look, then returns his gaze to the window. You sit in silence with him, sharing the same air, the same light, the same moment. You don’t ask who he is or what he wants from you. You simply let him exist alongside you, the still part of you keeping company with the restless part that is finally learning how to rest.")
+        return wait_for_choice([
+            ("Leave the classroom", self.after_school)
+        ])
+
+    def school_glance(self):
+        scr("You pause at the doorway just long enough to see him there, in his seat, exactly where you expect him to be. He doesn’t look up this time, and you don’t step in. Knowing he is there is enough. You let the classroom be his space and turn away.")
+        return wait_for_choice([
+            ("Leave the school", self.after_school)
+        ])
+
+    def after_school(self):
+        scr("You step back out into the hall and then out of the building. The school remains behind you, full of versions of you that studied, hid, waited, and watched. For the first time in a long time, you let it stay a memory instead of a problem to be solved.")
+        return wait_for_choice([
+            ("Walk through the city", self.to_city),
+            ("Head home early", self.to_home)
+        ])
+
+    def to_city(self):
+        scr("You walk the streets without a target, letting the city unfold at its own pace. People move along their paths, some with the depth of real lives, others with the simplicity of background loops. Signs hang where they always have, their words stable enough if you don’t stare too long. You notice small oddities out of the corner of your eye, but you don’t stop to force them into focus.")
+        return wait_for_choice([
+            ("Keep wandering", self.city_wander),
+            ("Start heading home", self.to_home)
+        ])
+
+    def city_wander(self):
+        scr("You take turns without thinking too hard about them, drifting past corners you have seen and ones you barely remember. At the edge of your hearing, fragments of phrases float by—'monitoring', 'no worse', 'give it time'—but they feel less like clues and more like background noise now. You acknowledge them and keep moving. Not every echo has to become a door.")
+        return wait_for_choice([
+            ("Head home now", self.to_home)
+        ])
+
+    def to_home(self):
+        scr("Eventually, the weight in your legs and behind your eyes convinces you that today does not need any more walking. You turn back toward home, retracing familiar steps. The streets feel a little less like traps and a little more like worn paths through a story you have told yourself too many times.")
+        return wait_for_choice([
+            ("Enter your home", self.home_enter)
+        ])
+
+    def home_enter(self):
+        scr("You open your door and step inside. The quiet of your room greets you like a tired friend. The same furniture, the same bed, the same four walls—nothing here has changed in any dramatic way. The difference sits inside you: the absence of a plan to twist this place into giving you more than it already has.")
+        return wait_for_choice([
+            ("Sit on the bed", self.home_sit)
+        ])
+
+    def home_sit(self):
+        scr("You sit on the edge of your bed and let your mind skim over the day. You saw Mr.Juger and chose not to pull him apart. You went to the school and chose not to demand anything from the boy. You walked the city and didn’t tear at its edges. You did not test the road, did not chase the beeps, did not try to force another fracture.")
+        return wait_for_choice([
+            ("Lie down", self.home_lie)
+        ])
+
+    def home_lie(self):
+        scr("You lie back and stare at the ceiling one more time. The tiredness that rolls over you now is not the shock of impact or the numbness after blood loss. It is the dull, honest exhaustion of someone who has been carrying too many questions for too long. You realise you don’t have to find every answer today. Maybe not ever.")
+        return wait_for_choice([
+            ("Close your eyes", self.sleep)
+        ])
+
+    def sleep(self):
+        scr("You close your eyes, not because the loop has forced you to, but because you are choosing to stop for now. The distant beep is still there, faint and steady, but you don’t strain to match your breathing to it. You do not reach out to the hospital world or drag the city into another test. You let yourself drift, sinking into the tiredness without fighting it, without promising yourself that tomorrow you will do more. For the first time, resting feels like enough.")
+        return wait_for_choice([
+            ("...", self.manager.chapter13.intro)
+        ])
+
+class Chapter13:
+    def __init__(self, manager):
+        self.manager = manager
+
+    def intro(self):
+        scr("Chapter 13: The Day That Might Be Different")
+        return wait_for_choice([
+            ("Continue", self.wake)
+        ])
+
+    def wake(self):
+        scr("You drift up toward awareness, but it feels slower this time, like floating instead of rising. There is fabric under your hands, a familiar weight on your chest, a thickness in the air that could be your room or somewhere else entirely. You know, without looking, that if you checked the clock it would still say 7:00 AM, 24th of July. You choose not to check. For once, the number doesn’t matter as much as the simple fact that you are here.")
+        return wait_for_choice([
+            ("Sit up", self.sit),
+            ("Stay lying down a moment", self.stay)
+        ])
+
+    def stay(self):
+        scr("You stay on your back, eyes half-open, watching the ceiling blur at the edges. Your mind feels dull and soft, like it has finally stopped trying to run ahead of itself. Thoughts of experiments, fractures, beeps and white ceilings drift across your mind’s surface, but none of them stick. You are tired, and your tiredness is bigger than any question you could ask right now.")
+        return wait_for_choice([
+            ("Sit up", self.sit)
+        ])
+
+    def sit(self):
+        scr("You sit up slowly, letting your feet find the floor. The room feels distant and close at the same time, like a memory you haven’t decided to keep or let go of. You don’t scan for changes. You don’t recite lists of clues. You pause, breathe, and accept that you have nothing new to prove today.")
+        return wait_for_choice([
+            ("Stand up", self.stand)
+        ])
+
+    def stand(self):
+        scr("You stand and move through your small morning without thinking too hard about it. Your hands know where everything is. Your body knows the order of movements. There is comfort in the automatic nature of it. You aren’t trying to optimise the loop or test its rules anymore. You are just letting it play out, one small action at a time.")
+        return wait_for_choice([
+            ("Step outside", self.leave_home)
+        ])
+
+    def leave_home(self):
+        scr("You open the door and step onto the street. The air feels familiar against your skin. The world around you has the same outline as every other day, but you are not peering at the edges, not pulling at the seams. You walk without a destination, letting your feet decide where to go, like muscle memory is telling the story for you now.")
+        return wait_for_choice([
+            ("Walk your usual path", self.path_usual),
+            ("Take a different turn", self.path_drift)
+        ])
+
+    def path_usual(self):
+        scr("You follow the route your body has worn into this world—past the place where Mr.Juger often stands, past the road that has held so many of your endings, past the corner where the homeless man sits. You see shapes, colours, familiar outlines, but you do not sharpen them into scenes. You let them remain background, just this once.")
+        return wait_for_choice([
+            ("Keep walking", self.walk_on)
+        ])
+
+    def path_drift(self):
+        scr("You turn down a side street, not one of the important ones, just a path that has always been there without ever being the centre of anything. The buildings here are quiet, the windows still. It feels like walking through an unwritten part of your own memory, a place that exists because it might have, not because it ever did.")
+        return wait_for_choice([
+            ("Keep walking", self.walk_on)
+        ])
+
+    def walk_on(self):
+        scr("As you walk, you catch small overlaps without reaching for them. A shop window reflects the sky, and for a heartbeat the blue turns sterile white before becoming sky again. A passing voice says something about 'today' and 'no change', but the words slide off you before they can root. The distant beep is still there somewhere, but it sounds farther away, like a hallway down you’re no longer walking.")
+        return wait_for_choice([
+            ("Head back home", self.head_home),
+            ("Pause and look around once", self.pause_once)
+        ])
+
+    def pause_once(self):
+        scr("You stop and turn on the spot, taking in the city as a whole instead of in pieces. Streets, signs, people, buildings—all of it hangs together like a painting you’ve stared at too long. You feel no urge to step into traffic, no desire to chase a glitch, no need to interrogate every shadow for answers. You simply nod at the world that has held you this long, a quiet acknowledgement between you and whatever built it.")
+        return wait_for_choice([
+            ("Go home now", self.head_home)
+        ])
+
+    def head_home(self):
+        scr("You make your way back toward your house, your steps feeling heavier and lighter at the same time. Heavier with accumulated loops and memories; lighter because, for once, you are not trying to outrun or outthink them. You reach your door without incident, without drama, and go inside as if you have done this a thousand times—which you have.")
+        return wait_for_choice([
+            ("Go to your room", self.room)
+        ])
+
+    def room(self):
+        scr("You enter your room and are met with the same four walls, the same bed, the same familiar shapes. It feels smaller than the city, but more honest. This is where every day has begun and ended. This is where you have woken, and collapsed, and tried again. You sit down on the edge of the bed and let the quiet settle in around you.")
+        return wait_for_choice([
+            ("Lie down", self.lie),
+            ("Sit for a while", self.sit_longer)
+        ])
+
+    def sit_longer(self):
+        scr("You sit a little longer, elbows on your knees, head lowered. If you wanted to, you could replay the entire story in your mind—the accidents, the voices, the loops, the tests, the glimpses of white. Instead, you let the memories blur at the edges. You accept that you have seen enough to know things are wrong and unfinished, and that you may never know exactly how they end.")
+        return wait_for_choice([
+            ("Lie down", self.lie)
+        ])
+
+    def lie(self):
+        scr("You lie back on the bed and stare at the ceiling one last time. The cracks no longer look like clues, just cracks. The air no longer feels like a hidden message, just air. Your body relaxes into the mattress, muscle by muscle, as if it has finally been given permission to stop rehearsing and simply rest.")
+        return wait_for_choice([
+            ("Close your eyes", self.close_eyes)
+        ])
+
+    def close_eyes(self):
+        scr("You close your eyes. Darkness blooms, but it is not the sharp black of the dream stage or the flicker of a failing scene. It is soft and deep and strangely kind. Somewhere very far away, a beep continues its slow, steady counting. It might be measuring your heartbeat. It might be measuring the time left in this day. You are too tired to decide which.")
+        return wait_for_choice([
+            ("Let yourself drift", self.drift)
+        ])
+
+    def drift(self):
+        scr("You feel yourself drifting, not up, not down, just away from the edges of the room. Your sense of the city loosens, the hallways and streets and classrooms unhooking themselves from your thoughts. You do not know if you are rising toward waking or sinking further into sleep. You only know that you are not fighting it anymore.")
+        return wait_for_choice([
+            ("...", self.end_options)
+        ])
+
+    def end_options(self):
+        scr("Everything narrows to a single, quiet moment. If you wanted to, you could try again. Open your eyes. Stand up. Walk the streets. Test the seams of this day one more time. Or you could let it all go and step away from the loop, whatever that means, wherever it leads.\n\nThis is the end of the story you have been told so far.")
+        return wait_for_choice([
+            ("Restart the day", self.manager.chapter1.ch1),
+            ("Quit", self.quit_game)
+        ])
+
+    def quit_game(self):
+        pygame.quit()
+        sys.exit()
+
 
 
 class SceneManager:
@@ -1904,7 +2553,11 @@ class SceneManager:
         self.chapter6 = Chapter6(self)
         self.chapter7 = Chapter7(self)
         self.chapter8 = Chapter8(self)
-        self.chapter9 - Chapter9(self)
+        self.chapter9 = Chapter9(self)
+        self.chapter10 = Chapter10(self)
+        self.chapter11 = Chapter11(self)
+        self.chapter12 = Chapter12(self)
+        self.chapter13 = Chapter13(self)
         self.current_scene = self.chapter1.ch1
 
     def run(self):

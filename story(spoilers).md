@@ -473,3 +473,590 @@ As the day stretches on, you feel tired, but it's a different kind of tired from
 You make your way home in the late light, like you did in Chapter 6, but with more purpose. You sit under your roof again, in the same room, at the same time, and go over everything you observed: the glitchy words, the controlled movements, the subtle hospital echoes hiding in ordinary scenes. It doesn't make the loop less real, but it makes it less random. For the first time, you feel like you are moving toward understanding, not just surviving.
 
 When sleep comes, it comes gently. No crash, no sudden blackout just a slow fade.You know that when you open your eyes, the date will still be 24th of July, and the clock will still say 7.00AM. But now, Chapter 8 has shifted your role: you are no longer just the victim being dragged through the loop. You are the investigator walking through a constructed world, collecting clues for whatever comes next.
+
+
+
+## Chapter 10 – Deliberate Breaks
+
+This is the chapter where the MC stops stumbling and starts **testing** the loop on purpose, using everything they’ve learned so far. The core idea: if this world is a constructed mind-city that shifts with attention, what happens when you push it *systematically*?
+
+---
+
+### Morning: Full Awareness
+
+The day begins as always: 7:00 AM, 24th of July.  
+But unlike earlier chapters, the MC wakes up with **complete clarity** about the situation.
+
+- They acknowledge, in internal monologue, that:
+  - This is not a normal world.
+  - The city changes in response to their focus.
+  - Pain here echoes on a real body somewhere else.
+  - Mr. Jüger, the homeless man, the boy, the voices are all connected to that underlying reality.
+
+Instead of panic or despair, the tone is determined:  
+“Fine. If this is my mind’s set, let’s see what happens when I change the script on purpose.”
+
+The MC mentally drafts a “plan” for the day:
+- Do not die.
+- Repeat some old actions *exactly*.
+- Break others hard.
+- Watch how the world bends.
+
+---
+
+### Test 1 – Saying New Things to Jüger
+
+The MC goes to Mr. Jüger as usual, but this time with a scripted test:
+
+- First, they greet him the *old* way, to see if he responds with a familiar line.
+- Then they drop a **completely new sentence**, something that belongs more to a hospital than a street, like:
+  - “How were my vitals yesterday, Mr. Jüger?”
+  - “Did the monitors beep all night?”
+
+Jüger’s reaction:
+- His face and body briefly “desync”: neighbour expression, doctor words, or vice versa.
+- He might answer with a half-clinical, half-casual sentence:
+  - “You’re… looking more stable today, kid. Fresh air helps.”
+- The MC notes the **glitch**: the more they bring up medical language, the more his mask flickers.
+
+Key result:
+- Jüger can’t stay perfectly in character if the MC drags him toward the “real” context.
+- The loop’s NPC roles are flexible, not locked.
+
+---
+
+### Test 2 – Pushing and Withholding
+
+The MC then runs two opposite styles of experiment with known danger points (road, chain-snatching street, etc.):
+
+1. **Exact repetition**  
+   - They carefully recreate a route or sequence from an earlier loop:
+     - Same timing to the road.
+     - Same way of standing at the crossing.
+     - Same choice to *avoid* stepping into traffic.
+   - Result:  
+     - Some beats line up almost perfectly (a car at the same time, a passerby repeating a line).
+     - But not everything is identical. The loop can approximate, but not fully copy.
+
+2. **Sharp deviation**  
+   - At another moment where they used to die, they do something wildly different:
+     - Cross at a different angle.
+     - Take a parallel alley instead of the main street.
+     - Ignore an “obvious” danger they previously fixated on.
+   - Result:
+     - The world scrambles a bit:
+       - A car appears too late to be threatening.
+       - A robbery almost starts but glitches, then resets to normal walking.
+       - People around seem briefly “confused,” like actors missing a cue.
+
+Conclusion:
+- The loop is less like a recorded video and more like **improvised theatre** responding to the MC’s strongest expectations.
+
+---
+
+### Test 3 – Direct Questions About the Frame
+
+The MC deliberately visits all three key figures with **framed questions**:
+
+#### Homeless man
+
+- Asks not “what day is it?” but:
+  - “Do you remember hearing beeps last night?”
+  - “Do you ever feel like you’re just…waiting for me to come back?”
+- His responses are fragmented but telling:
+  - Mentions waiting “between” days.
+  - Mentions the sound of something “starting again” before people reappear.
+- The MC realises this man has always been a kind of **observer**, built into the mindspace.
+
+#### Boy in the classroom
+
+- MC talks about:
+  - Staying still vs. running into danger.
+  - The feeling of watching yourself get hurt.
+- The boy’s lines are subtle:
+  - He might say things like:
+    - “You don’t have to try everything just because you can start over.”
+    - “Some choices still hurt, even if the day resets.”
+- This reinforces the idea that the boy is the “still” part of the MC, watching the chaos.
+
+#### Internal voice
+
+- Throughout the day, the MC answers the mindvoice out loud:
+  - “[VOICE]: Stop.”
+  - “I’m not going to jump in front of anything today.”
+  - “[VOICE]: This will not fix it.”
+  - “I know. I just want to see how it moves.”
+
+The voice is less purely furious now, more exhausted—pushing back when the MC treats pain like a tool.
+
+---
+
+### The Cost of Over-Experimenting
+
+As the day goes on, experiments get more precise but the **world feels more strained**:
+
+- Background glitches:
+  - Short, sudden freezes where all NPCs halt for a heartbeat.
+  - Lights flicker in sync with the beeps.
+  - Edges of buildings blur more when the MC tries to “force” too many outcomes.
+- Physical feedback:
+  - The MC’s body aches sharply when they push tests too far, even without obvious injuries.
+  - The internal voice complains of exhaustion or pain when an experiment goes on too long, as if the real body is bearing the load.
+
+The MC realises:
+- They *can* change the loop’s behaviour.
+- But every deliberate push feels like tugging on the nerves of whoever is lying under those machines.
+
+---
+
+### Evening: A New Kind of Fear
+
+By the end of the chapter, the MC isn’t afraid of the city killing them in the old ways.  
+They’re afraid of themselves using the city as a laboratory at the expense of the real, unseen self.
+
+They return home with:
+
+- A notebook in their head full of observations:
+  - “Same actions ≈ similar world; new actions = world scrambles.”
+  - “Jüger glitches more when I mention hospital things.”
+  - “The homeless man responds like a watcher on the edge of consciousness.”
+  - “The boy is the part that wants to stop running into walls.”
+- A new question:
+  - “If I keep pushing for answers this way, am I actually making anything better? Or just hurting the one who has to feel it?”
+
+Chapter 10 closes with the MC **not** collapsing, but sitting in their room, extremely awake and extremely tired—recognising that experimentation itself might be another form of harm. This sets up Chapter 11 as the fallout: less “what can I break?” and more “what should I stop breaking?”
+
+
+## Chapter 11 – The Frayed Edge
+
+Chapter 11 is the “fallout” from Chapter 10. After a day of pushing and prodding at the loop like a scientist, the MC wakes up with the same date and time—but this time the dominant feeling is **exhaustion**, not curiosity. They know now that the loop is elastic, that people change, that the city reacts. The question hanging over this chapter is not “What else can I break?” but “How much more can I do before something breaks me?”
+
+---
+
+### Morning: Tired of Solving
+
+The day begins with the same ritual—7:00 AM, 24th of July—but the MC doesn’t rush to test anything. They wake up feeling **drained** from yesterday’s experiments, bones heavy, thoughts slow. Instead of instantly scheming, they lie there and admit to themselves that pulling on every thread comes with a cost: every glitch, every forced reaction from Jüger, every strain in the world feels like it lands on a real body somewhere.
+
+Their inner monologue shifts from:
+- “How do I force this world to reveal itself?”  
+to  
+- “How do I move without making things worse?”
+
+The MC still cares about understanding, but there’s fear mixed into that desire now.
+
+---
+
+### A Quieter Day
+
+Unlike Chapter 10’s aggressive testing, Chapter 11 is full of **soft observations**:
+
+- The MC walks the usual paths more slowly.
+- They don’t go out of their way to trigger accidents or confrontations.
+- They watch the loop show its seams **on its own**.
+
+Examples of quiet bleed-through:
+- At Mr. Jüger’s usual spot, his greeting is simple, but the MC hears a second, quieter voice under his words—a doctor’s cadence slipping through, especially when he asks, “How are you feeling today?”
+- In the background of normal street noise, the MC occasionally hears:
+  - “…keep monitoring.”
+  - “…no change overnight.”
+  - “…we’ll try again later.”
+- Traffic lights and pedestrian signals flash with a rhythm that almost matches the heartbeat-like beep they’ve heard in the dark world.
+
+Instead of poking constantly, the MC lets these details **come to them**, and they come more frequently now that the MC isn’t drowning them in chaos.
+
+---
+
+### Sitting Still on Purpose
+
+At some point in the chapter, the MC makes a conscious choice to **stop moving**:
+
+- They pick one location—maybe:
+  - a bench near the crossing,
+  - a spot opposite Jüger’s usual path,
+  - or a place where multiple roads meet.
+- They sit there and **refuse to play along** with any of the old patterns:
+  - No stepping into the road.
+  - No chasing the chain-snatching.
+  - No starting sharp conversations.
+
+They just **stay**.
+
+As they sit, the world tries to run its usual routines around them:
+- A car almost lines up with the old accident timing, then glides past instead.
+- People loop their background animations, but now the MC notices when they “reset.”
+- The beeping pattern from the hospital starts to sync terrifyingly well with every blink, every shallow breath.
+
+This stillness is a different kind of experiment:
+- “If I don’t give the loop any new input, what does it do by itself?”
+
+---
+
+### The Fracture: A Brief Window
+
+The longer the MC stays still, the more the scene begins to **fray**:
+
+- Sound drops out in chunks:
+  - A car goes by in total silence.
+  - A person’s mouth moves without any words.
+- Colour drains a little, the edges of buildings soften, like the set is losing resolution.
+- The beep grows stronger and more regular, drowning out everything else.
+
+Then, in one focused moment, the loop **slips**:
+
+- The street freezes—everyone and everything locked mid-motion.
+- The MC blinks, and in that blink:
+  - The black of closed eyes is replaced, for a heartbeat, by **white**.
+  - A ceiling with harsh lights.
+  - Straps holding arms down.
+  - The cold shape of metal rails.
+  - A soundscape of machines and hurried voices.
+
+They don’t get a long scene. It’s fragmentary, staccato—just enough to prove the “other side” is real.
+
+Snatches of dialogue, half-heard:
+
+- “He’s still not waking.”
+- “Vitals are stable for now.”
+- “We can’t keep doing this forever.”
+- Jüger’s voice, clearly a doctor now: calm, professional, saying something like, “Give him time. The mind heals on its own pace.”
+
+Then, as suddenly as it came, the hospital world **yanks away** and the MC is back on the street.
+
+But the world doesn’t snap back perfectly:
+- For a few seconds, textures are wrong, shadows too long, people slightly out of place.
+- The MC can tell the loop is **struggling** to reassert itself.
+
+---
+
+### After the Glimpse
+
+Shaken, the MC gets up and walks, not to “test” anymore, but simply because they don’t know what else to do. Their thoughts spin:
+
+- “So there *is* a real me.”
+- “This city is a buffer, not the whole story.”
+- “Every time I play with pain and death here, something on that bed feels it.”
+
+They revisit a few familiar anchors, now seeing them through this new lens:
+- Mr. Jüger seems more like a shadow cast by the doctor, shaped by how the MC remembers authority and care.
+- The homeless man feels like a personification of waiting and watching—someone always on the edge, counting beeps between disappearances.
+- The boy becomes even more clearly the part that has been sitting and enduring, while the rest of the MC ran around “doing things.”
+
+The difference from Chapter 10:
+- In 10, experiments feel powerful.
+- In 11, that same power feels **dangerous** and heavy.
+
+---
+
+### Evening: Choosing Not to Push
+
+By the end of the chapter, the MC returns home with a new kind of fear—not of the loop itself, but of their own impulse to poke it until it breaks.
+
+They reflect quietly:
+
+- They can force glitches.
+- They can strain the boundaries.
+- They can drag the hospital world into view for a second.
+
+But at what cost?
+
+Chapter 11 doesn’t end with a big decision or a hospital wake-up. It ends with the MC:
+
+- Sitting or lying in their room.
+- Admitting, in internal monologue, that they’re **tired** of treating this place like a puzzle box at the expense of the person in the bed.
+- Letting the day end with *minimal interference*—no death, no test, no forced confrontation.
+
+The final feeling of Chapter 11 is a **soft collapse of will to keep experimenting**.  
+This sets up Chapter 12, where the MC starts to let go of unnecessary behaviours and walks a quieter loop, moving toward acceptance instead of constant struggle—without yet knowing if that leads to waking, staying, or something else.
+
+## Chapter 12 – Giving In to Tiredness
+
+Chapter 12 is the “release of tension” chapter after all the experiments and the fracture glimpse. The MC does not get answers here; instead, they slowly **stop fighting** the loop in the way they have been, letting go of the unnecessary tests and giving in to their own exhaustion. This sets up Chapter 13 to be ambiguous: did they finally rest into healing, or just drift deeper into the dream?
+
+---
+
+### Morning: No More Plans
+
+The day begins the same way it always has: 7:00 AM, 24th of July.  
+But this time, the MC doesn’t start with a list, a test, or a scheme.
+
+They wake up feeling **hollow-tired** rather than panicked or determined. The memory of the hospital glimpse from Chapter 11 won’t fully form when they reach for it, but it lingers as a pressure in their chest—a sense that somewhere, a real body is lying under bright lights, with wires and beeps and worried voices.
+
+They lie there and think something like:
+
+- “I’ve pulled the world apart as much as I can.”
+- “Every answer I force out of it hurts someone I can’t see.”
+- “I don’t have to do… everything… every day.”
+
+Instead of asking “What should I test today?”, they ask “What can I **stop** doing today?”
+
+Their decision for the chapter is quiet but huge:  
+No more chasing death. No more stress-testing the seams. Just… live one loop as gently as possible.
+
+---
+
+### A Smaller Day
+
+The MC gets up and moves through the morning without poking at it:
+
+- They glance at the clock, acknowledge the date, and then **look away** instead of staring it down.
+- They notice the scars and bandaids but don’t add new ones, don’t scratch or pinch to “prove” anything.
+- They perform their routine not as an experiment, but as if it were simply… life, however strange.
+
+When they step outside, the world feels softer—not because it changed, but because the MC’s **purpose** did.
+
+They decide to keep the day **small**:
+
+- Maybe visit Mr. Jüger once.
+- Maybe go to the school.
+- Maybe walk a bit in the city.
+- Then come home, without forcing any scene to turn dramatic.
+
+The focus is on **refusing to escalate**.
+
+---
+
+### Gentle Encounters
+
+The interactions this chapter are toned-down, reflective versions of previous ones.
+
+#### Mr. Jüger
+
+- The MC greets him, but doesn’t try to trap him with questions.
+- They have a simple, almost mundane conversation:
+  - Weather.
+  - “Be careful.”
+  - Maybe one soft comment from him like: “You look… less restless today.”
+- The MC notes the line but doesn’t push.
+
+#### Homeless man (optional short beat)
+
+- If they pass him, the MC might just nod or share a brief line:
+  - “Rough day?”  
+  - “Same as always,” he answers, but with less weight.
+- The important part: no hard interrogation, no “what is this place?” grilling.
+
+#### Boy in the classroom
+
+- The MC visits the boy again.
+- This time, they might simply sit in silence longer than before.
+- Maybe they say something small:
+  - “I don’t think I need to try everything anymore.”
+- The boy doesn’t turn into a source of answers.
+  - He might give a tiny nod.
+  - Or just keep watching the window.
+- The scene is less about information, more about **accompaniment**—the restless part of the MC sitting with the still part without demanding anything.
+
+---
+
+### The City Unpushed
+
+If the MC walks the city again, it’s different from Chapter 10–11:
+
+- They notice the familiar drifting details—changing signs, looping background people—but they don’t stand and stare to force text into hospital terms.
+- They accept small glitches as part of the landscape, not as puzzles to solve immediately.
+
+There might be a moment where they **choose not** to chase something:
+
+- A strange figure in the distance that they would have followed in earlier chapters.
+- A snippet of hospital-like dialogue that they don’t track down.
+- A weirdly lit building edge they decide not to push toward.
+
+This restraint doesn’t fix the loop, but it changes the emotional pattern:  
+The MC is no longer tearing at the walls every second they’re awake.
+
+---
+
+### Coming Home Without a Fight
+
+As evening (or what passes for it) comes, the MC heads home, not because the world kicked them back, but because they’re **tired** and choose to stop.
+
+The return home is quiet:
+
+- No crashing end.
+- No violent interruption.
+- Just steps back through the familiar door, into the familiar room.
+
+They sit or lie on the bed and go over the day:
+
+- They remember all the previous loops where they died, pushed, tested, demanded.
+- They feel the weight of all those choices landing on the unseen body.
+- They don’t reach a grand conclusion—only a simple one:
+
+> “I can’t keep pulling on every loose thread.  
+> I’m too tired.  
+> Maybe it’s okay not to know everything right now.”
+
+The important thing:  
+They aren’t “giving up on life,” they’re giving up on **over-efforting** inside the loop.
+
+---
+
+### Letting the Tiredness Win
+
+The chapter ends with the MC **letting go** in a very small, human way:
+
+- They stop planning tomorrow.
+- They don’t promise themselves another big experiment.
+- They don’t swear to solve it or escape.
+
+They just:
+
+- Acknowledge how tired they are—mind, body, whatever passes for both in this place.
+- Let their muscles unclench.
+- Close their eyes, not from injury or collapse, but from **chosen rest**.
+
+You can add a very subtle final image to feed into Chapter 13’s ambiguity:
+
+- The clock is visible in the corner of their eye, but out of focus.
+- For a split second, the colon between the numbers **misses a blink**, or the last digit flickers, but the MC doesn’t look directly at it.
+- Or the familiar faraway beep softens, more distant than before.
+
+The last feeling of Chapter 12 is not horror or triumph, but **surrender to tiredness** without knowing what that surrender will cause.
+
+This leaves Chapter 13 completely open to interpretation:
+- Maybe the next loop is different.
+- Maybe they finally wake.
+- Maybe they drift deeper.
+- Maybe nothing changes at all.
+
+But the character has changed: from frantic tester to someone who can finally rest, even inside an unfinished day.
+
+
+## Chapter 13 – The Day That Might Be Different
+
+Chapter 13 is the soft, ambiguous landing. It doesn’t spell out whether the MC wakes up, dies, or stays in the loop forever. It only shows that something in the *relationship* between the MC and the loop has changed, and leaves the rest for the player to decide.
+
+---
+
+### A Morning Out of Focus
+
+The chapter opens in a way that almost feels wrong.
+
+The MC becomes aware of **waking**, but this time the details are slightly blurred:
+
+- They know they are lying down.
+- They feel fabric under their hands.
+- They hear something—maybe an alarm, maybe a beep, maybe both overlapping.
+
+But instead of a crisp cut to “7:00 AM, 24th of July”, the text stays **soft**:
+
+- The clock is mentioned, but not clearly described.
+- The date is implied, not printed in bold like before.
+- The MC decides not to look at it directly.
+
+They feel tired, but it’s not the frantic, wired exhaustion from constant experiments. It’s the dull, heavy tiredness from Chapter 12, stretched a little further, familiar and strangely gentle.
+
+They do not plan the day. They simply stand up and see where their feet take them.
+
+---
+
+### Moving on Habit, Not Compulsion
+
+The MC walks through parts of the loop almost by muscle memory:
+
+- Maybe they step outside and find the street waiting.
+- Maybe they see Mr. Jüger in the distance.
+- Maybe they pass the road, the corner, the school.
+
+But the **tone** is different:
+
+- They’re not checking every detail.
+- They’re not timing cars.
+- They’re not testing or interrogating.
+
+They move through the world as if walking through a story they know by heart, but have stopped trying to rewrite. They let things happen or not happen without pushing.
+
+Small hints that things are “off” remain:
+
+- Jüger maybe waves but doesn’t come close, and the MC doesn’t go to him.
+- The homeless man is there, but the MC only sees him from across the street, a vague outline, not a focal point.
+- The boy’s classroom window is visible when they pass the school, but they don’t go inside—just feel a faint sense of someone sitting still and watching, and that’s enough.
+
+The city feels like it’s running on a lighter script, not because it changed fundamentally, but because the MC has stopped trying to force it to perform.
+
+---
+
+### The Edges of Reality
+
+As the MC walks, they catch brief, overlapping impressions:
+
+- A shop window reflecting not buildings, but a white ceiling for a split second.
+- The beep behind the city noise, slightly softer, less urgent.
+- A snatch of dialogue from nowhere in particular:
+  - “Same day again?”
+  - “He looks calmer today.”
+  - “Let him rest.”
+
+The text never says whether these lines belong to NPCs, doctors, family, or the MC’s own mind. They are just **fragments**, like whispered notes from a room you are almost in but not quite.
+
+The MC hears them, acknowledges them, but does not chase them.
+
+---
+
+### Choosing Not to Know
+
+At some point in the chapter, the MC faces a familiar “choice” point that used to define whole branches:
+
+- Step into the road or stay safe.
+- Follow Mr. Jüger or let him go.
+- Enter the school or keep walking.
+
+This time, they don’t treat it as a test. They simply pick the **calmer** option—step back, let go, walk past.
+
+Not because they have solved the loop, but because they have accepted they may not be able to.
+
+The internal monologue is simple, almost quiet:
+
+- “I don’t need to see everything.”
+- “I don’t have to pull every wire.”
+- “I’m tired. That’s real enough.”
+
+There’s no triumphant revelation, just a human decision to stop forcing clarity out of a world that might be protecting them from too much truth at once.
+
+---
+
+### Ending: The Drift
+
+As evening—or whatever the loop uses for evening—approaches, the MC returns home.
+
+The final sequence mirrors Chapter 6 and Chapter 12, but with a new weight:
+
+- They sit or lie on the bed.
+- The room feels both familiar and far away.
+- The beeping presence is there, but distant, like someone closed a door between worlds.
+
+They think back on everything:
+
+- The accidents.
+- The experiments.
+- The crying voice and the angry voice.
+- The boy, the homeless man, Mr. Jüger.
+- The glimpse of the hospital.
+
+And they choose not to force a conclusion.
+
+There is no inner line like “This must mean X.” Instead, they accept that they don’t know whether this is healing, dying, or just another day repeating—but they are **too tired to fight it** any more.
+
+They let their body sink into the mattress.
+
+They let their mind float.
+
+The last image is intentionally ambiguous:
+
+- Maybe the clock display blurs completely, unreadable.
+- Maybe the date flickers between 24 and something else, too fast to catch.
+- Maybe the beep stutters once, then levels out again.
+- Maybe there is a line like:
+
+> You feel yourself drifting, not up, not down—just away.  
+> Wherever you are going, you are too tired to resist it.
+
+There is no explicit “You wake up in a hospital,” no explicit “You never wake up,” no explicit “You stay in the loop forever.”
+
+Chapter 13 closes the **emotional arc**—from panic and self-harm to understanding and letting go—while leaving the **literal fate** of the MC in shadow.
+
+The story ends in that shadow:
+
+- calm, quiet,
+- unresolved in facts,
+- but resolved in feeling.
