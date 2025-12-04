@@ -2,10 +2,15 @@ import pygame
 import sys
 
 pygame.init()
-pygame.mixer.init()
+
+if sys.platform != "emscripten":
+    pygame.mixer.init()
+
 screen = pygame.display.set_mode((600, 400))
+
 pygame.display.set_caption("Shadows Of Yesterday")
-font = pygame.font.SysFont(None, 28)
+font = pygame.font.Font(None, 28)
+
 
 BUTTON_WIDTH = 240
 BUTTON_HEIGHT = 44
@@ -28,7 +33,7 @@ def wrap_text(text, font, max_width):
         lines.append(current_line.strip())
     return lines
 
-def type_text(surface, text, font, x, y, max_width, line_height=32, delay=30):
+def type_text(surface, text, font, x, y, max_width, line_height=32, delay=20):
     lines = wrap_text(text, font, max_width)
     surface.fill((17, 13, 28))  # Clear full background at each new scene
 
@@ -2565,9 +2570,11 @@ class SceneManager:
             self.current_scene = self.current_scene()
 
 def main():
-    global scene_manager
-    scene_manager = SceneManager()
-    scene_manager.run()
+    mgr = SceneManager()
+    mgr.run()
 
 if __name__ == "__main__":
     main()
+
+
+
